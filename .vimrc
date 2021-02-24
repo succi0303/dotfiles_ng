@@ -5,8 +5,10 @@ set termencoding=UTF-8
 set backspace=indent,eol,start
 set hidden
 set showcmd
+set showmatch
 set cursorline
 set number
+set wrap
 set laststatus=2
 set incsearch
 set display+=lastline
@@ -14,6 +16,8 @@ set wildmenu
 set ignorecase
 set clipboard=unnamed
 set wildmode=list,full
+set nobackup
+set noswapfile
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " Indent settings
@@ -54,3 +58,7 @@ nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
 syntax on
+
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
