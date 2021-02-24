@@ -9,5 +9,6 @@
 !/.Brewfile
 !/.vimrc
 
+!/.gitconfig
 !.gitignore
 !.gitkeep
