@@ -3,6 +3,9 @@
 
 !/.bin/
 !/.bin/**
+
+!/.bash_profile
+!/.bashrc
 !/.Brewfile
 !/.vimrc
 
