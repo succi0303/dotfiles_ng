@@ -4,6 +4,7 @@
 !/.bin/
 !/.bin/**
 !/.Brewfile
+!/.vimrc
 
 !.gitignore
 !.gitkeep
