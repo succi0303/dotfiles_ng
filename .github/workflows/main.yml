@@ -25,4 +25,4 @@ jobs:
       - name: Install required packages
         run: yum install -y git sudo
       - name: Install dotfiles
-        run: ./bin/install.sh
+        run: .bin/install.sh
