@@ -17,3 +17,12 @@ jobs:
         run: apt-get update && apt-get install -y git sudo
       - name: Install dotfiles
         run: .bin/install.sh
+  amazonlinux2:
+    runs-on: ubuntu-latest
+    container: amazonlinux:2
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install required packages
+        run: yum install -y git sudo
+      - name: Install dotfiles
+        run: .bin/install.sh
