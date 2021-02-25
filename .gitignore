@@ -11,6 +11,8 @@
 !/.vim/autoload/
 /.vim/autoload/**
 !/.vimrc
+!/.zshrc
+!/.zshenv
 
 !/.gitconfig
 !.gitignore
