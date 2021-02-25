@@ -1,3 +1,12 @@
+" vim-plug
+call plug#begin('~/.vim/autoload/plugged')
+
+Plug 'airblade/vim-gitgutter'
+Plug 'cohama/lexima.vim'
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
+
 " Basic settings
 set encoding=UTF-8
 set fileencoding=UTF-8

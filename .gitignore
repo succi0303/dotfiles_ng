@@ -7,6 +7,9 @@
 !/.bash_profile
 !/.bashrc
 !/.Brewfile
+!/.vim/
+!/.vim/autoload/
+/.vim/autoload/**
 !/.vimrc
 
 !/.gitconfig
