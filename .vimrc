@@ -3,6 +3,8 @@ call plug#begin('~/.vim/autoload/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -73,3 +75,11 @@ syntax on
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+" fzf.vim
+nnoremap <C-g>f :Files<CR>
+nnoremap <C-g>b :Buffers<CR>
+nnoremap <C-g>l :BLines<CR>
+nnoremap <C-g>L :Lines<CR>
+nnoremap <C-g>c :BCommits<CR>
+nnoremap <C-g>C :Commits<CR>
