@@ -32,3 +32,5 @@ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 export FZF_COMPLETION_OPTS='--reverse --height=40%'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(starship init zsh)"
