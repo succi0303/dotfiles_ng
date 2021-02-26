@@ -11,6 +11,8 @@
 !/.vim/autoload/
 /.vim/autoload/**
 !/.vimrc
+!/.zplug/
+/.zplug/**
 !/.zshrc
 !/.zshenv
 
