@@ -94,6 +94,36 @@ setopt pushd_ignore_dups
 #setopt pushd_silent
 setopt pushd_to_home
 
+# glob
+#setopt bad_pattern
+#setopt bare_glob_qual
+setopt brace_ccl
+#setopt case_glob
+#setopt case_match
+#setopt csh_null_glob
+#setopt equals
+#setopt extended_glob
+#setopt force_float
+#setopt glob
+#setopt glob_assign
+#setopt glob_dots
+#setopt glob_subst
+setopt hist_subst_pattern
+#setopt ignore_braces
+#setopt ignore_close_braces
+#setopt ksh_glob
+setopt magic_equal_subst
+setopt mark_dirs
+#setopt multibyte
+#setopt nomatch
+#setopt null_glob
+#setopt numeric_glob_sort
+setopt rc_expand_param
+#setopt rematch_pcre
+#setopt sh_glob
+#setopt unset
+#setopt warn_create_global
+
 autoload -Uz colors
 colors
 
