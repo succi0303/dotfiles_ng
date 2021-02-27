@@ -52,13 +52,41 @@ bindkey '^n' history-biginning-search-forward-end
 bindkey '^r' history-incremental-pattern-search-backward
 bindkey '^s' history-incremental-pattern-search-forward
 
+# completion
+#setopt always_last_prompt
+setopt always_to_end
+setopt auto_list
+setopt auto_menu
+#setopt auto_name_dir
+#setopt auto_param_keys
+#setopt auto_param_slash
+#setopt bash_auto_list
+#setopt complete_aliases
+setopt complete_in_word
+setopt glob_complete
+#setopt hash_list_all
+#setopt list_ambiguous
+setopt list_beep
+setopt list_packed
+#setopt list_rows_first
+setopt list_types
+setopt menu_complete
+#setopt rec_exact
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' format '%B%F{yellow}%d%f%b'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:default' menu select=2
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
+zstyle ':completion:*' keep-prefix
+zstyle ':completion:*' recent-dirs-insert both
+
 autoload -Uz colors
 colors
 
 bindkey -e
 
-autoload -Uz compinit
-compinit
 
 
 export FZF_COMPLETION_OPTS='--reverse --height=40%'
