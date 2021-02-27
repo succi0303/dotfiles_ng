@@ -192,7 +192,7 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lsa='ls -al'
 
-[ -f ~/.zshrc.`uname` ] && ~/.zshrc.`uname`
+[ -f ~/.zshrc.`uname` ] && source ~/.zshrc.`uname`
 
 # fzf
 export FZF_COMPLETION_OPTS='--reverse --height=40%'
