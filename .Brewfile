@@ -3,6 +3,7 @@ tap "homebrew/core"
 
 brew "curl"
 brew "fzf"
+brew "ghq"
 brew "git"
 brew "git-secrets"
 brew "starship"
