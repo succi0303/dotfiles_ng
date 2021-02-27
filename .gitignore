@@ -13,8 +13,10 @@
 !/.vimrc
 !/.zplug/
 /.zplug/**
-!/.zshrc
 !/.zshenv
+!/.zshrc
+!/.zshrc.Darwin
+!/.zshrc.Linux
 
 !/.gitconfig
 !.gitignore
