@@ -82,6 +82,18 @@ zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
 zstyle ':completion:*' keep-prefix
 zstyle ':completion:*' recent-dirs-insert both
 
+# change directory
+setopt auto_cd
+setopt auto_pushd
+setopt cdable_vars
+#setopt chase_dots
+#setopt chase_links
+#setopt posix_cd
+setopt pushd_ignore_dups
+#setopt pushd_minus
+#setopt pushd_silent
+setopt pushd_to_home
+
 autoload -Uz colors
 colors
 
