@@ -199,4 +199,4 @@ export FZF_COMPLETION_OPTS='--reverse --height=40%'
 # starship
 eval "$(starship init zsh)"
 
-[ -f ~/.zshrc_`uname` ] && .~/.zshrc_`uname`
+[ -f ~/.zshrc.`uname` ] && .~/.zshrc.`uname`
