@@ -34,7 +34,7 @@ set noswapfile
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " Indent settings
-set tabstop=s shiftwidth=2 softtabstop=2
+set tabstop=2 shiftwidth=2 softtabstop=2
 set expandtab
 set smarttab
 set autoindent
