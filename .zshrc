@@ -124,17 +124,79 @@ setopt rc_expand_param
 #setopt unset
 #setopt warn_create_global
 
+# initialization
+#setopt all_export
+#setopt global_export
+#setopt global_rcs
+#setopt rcs
+
+# input/output
+setopt aliases
+setopt clobber
+setopt correct
+setopt correct_all
+#setopt dvorak
+setopt no_flow_control
+setopt ignore_eof
+#setopt interactive_comments
+#setopt hash_cmds
+#setopt hash_dirs
+#setopt hash_executables_only
+#setopt mail_warning
+setopt path_dirs
+#setopt path_script
+#setopt print_eight_bit
+#setopt print_exit_value
+#setopt rc_quotes
+#setopt rm_star_silent
+#setopt rm_star_wait
+#setopt short_loops
+#setopt sun_keyboard_hack
+
+# job
+setopt auto_continue
+setopt auto_resume
+#setopt bg_nice
+#setopt check_jobs
+#setopt hup
+#setopt long_list_jobs
+#setopt monitor
+setopt notify
+
+# zle
+setopt no_beep
+#setopt combining_chars
+setopt emacs
+#setopt overstrike
+#setopt single_line_zle
+#setopt vi
+setopt zle
+
+# cdr
+autoload -Uz add-zsh-hook
+autoload -Uz chpwd_recent_dirs cdr
+add-zsh-hook chpwd chpwd_recent_dirs
+zstyle ':chpwd:*' recent-dirs-default true
+
 autoload -Uz colors
 colors
 
-setopt no_beep
 bindkey -e
 
+# alias
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ls='ls -GwF'
+alias ll='ls -l'
+alias la='ls -a'
+alias lsa='ls -al'
 
-
+# fzf
 export FZF_COMPLETION_OPTS='--reverse --height=40%'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# starship
 eval "$(starship init zsh)"
 
 [ -f ~/.zshrc_`uname` ] && .~/.zshrc_`uname`
