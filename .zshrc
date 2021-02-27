@@ -192,6 +192,8 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lsa='ls -al'
 
+[ -f ~/.zshrc.`uname` ] && ~/.zshrc.`uname`
+
 # fzf
 export FZF_COMPLETION_OPTS='--reverse --height=40%'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -199,4 +201,3 @@ export FZF_COMPLETION_OPTS='--reverse --height=40%'
 # starship
 eval "$(starship init zsh)"
 
-[ -f ~/.zshrc.`uname` ] && .~/.zshrc.`uname`
