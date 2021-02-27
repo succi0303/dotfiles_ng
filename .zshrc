@@ -201,8 +201,19 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
     eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # fzf
-export FZF_COMPLETION_OPTS='--reverse --height=40%'
+alias fzf='fzf --reverse --height=50%'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+function fzf-ghq() {
+  local src=$(ghq list | fzf --preview "ls -laTp $(ghq root)/{} | tail -n+4 | awk '{print \$9\"/\"\$6\"/\"\$7 \" \" \$10}'")
+  if [ -n "$src" ]; then
+    BUFFER="cd $(ghq root)/$src"
+    zle accept-line
+  fi
+  zle -R -c
+}
+zle -N fzf-ghq
+bindkey '^gr' fzf-ghq
 
 # starship
 eval "$(starship init zsh)"
