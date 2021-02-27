@@ -85,6 +85,7 @@ zstyle ':completion:*' recent-dirs-insert both
 autoload -Uz colors
 colors
 
+setopt no_beep
 bindkey -e
 
 
