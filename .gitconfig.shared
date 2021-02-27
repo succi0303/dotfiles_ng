@@ -1,2 +1,19 @@
 [color]
-  ui = auto
+    ui = auto
+
+
+[commit]
+    verbose = true
+
+[ghq]
+    root=~/ghq
+
+[push]
+    default = current
+
+[pull]
+    rebase = true
+    ff = only
+
+[status]
+    showUntackedFiles = all
