@@ -9,6 +9,7 @@
 
 - [Homebrew](https://brew.sh/index) for applications
 - [zplug](https://github.com/zplug/zplug) for zsh plugins
+- [tpm](https://github.com/tmux-plugins/tpm) for tmux plugins
 
 ## Applications
 
