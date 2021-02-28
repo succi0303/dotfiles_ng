@@ -7,6 +7,8 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting"
 
+zplug "plugins/ssh-agent", from:oh-my-zsh
+
 if ! zplug check --verbose; then
   printf "Install? [y/N]: "
   if read -q; then
@@ -214,6 +216,11 @@ function fzf-ghq() {
 }
 zle -N fzf-ghq
 bindkey '^gr' fzf-ghq
+
+# ssh-agent
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent lifetime 72h
+
 
 # starship
 eval "$(starship init zsh)"
