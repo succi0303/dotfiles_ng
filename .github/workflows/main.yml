@@ -26,3 +26,9 @@ jobs:
         run: yum install -y git sudo
       - name: Install dotfiles
         run: .bin/install.sh
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dotfiles
+        run: ./bin/install.sh
