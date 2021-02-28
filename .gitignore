@@ -7,6 +7,9 @@
 !/.bash_profile
 !/.bashrc
 !/.Brewfile
+!/.tmux/
+!/.tmux/plugins/
+/.tmux/plugins/**
 !/.tmux.conf
 !/.vim/
 !/.vim/autoload/
