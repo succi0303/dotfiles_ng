@@ -2,3 +2,6 @@
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/sbin
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+# AWS CLI completion
+complete aws -C '/home/linuxbrew.linuxbrew/bin/aws_completer' aws
