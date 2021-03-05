@@ -1,2 +1,5 @@
 # AWS CLI completion
 complete aws -C '/usr/local/bin/aws_completer' aws
+
+# alias
+alias ls='ls -GwF'

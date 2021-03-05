@@ -189,7 +189,6 @@ bindkey -e
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
-alias ls='ls -GwF'
 alias ll='ls -l'
 alias la='ls -a'
 alias lsa='ls -al'
