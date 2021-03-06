@@ -75,8 +75,6 @@ setopt list_types
 setopt menu_complete
 #setopt rec_exact
 autoload -Uz compinit
-autoload bashcompinit
-bashcompinit
 compinit
 zstyle ':completion:*' format '%B%F{yellow}%d%f%b'
 zstyle ':completion:*' group-name ''
@@ -85,6 +83,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
 zstyle ':completion:*' keep-prefix
 zstyle ':completion:*' recent-dirs-insert both
+
+autoload  -U +X bashcompinit
+bashcompinit
 
 # change directory
 setopt auto_cd
