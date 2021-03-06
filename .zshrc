@@ -75,6 +75,8 @@ setopt list_types
 setopt menu_complete
 #setopt rec_exact
 autoload -Uz compinit
+autoload bashcompinit
+bashcompinit
 compinit
 zstyle ':completion:*' format '%B%F{yellow}%d%f%b'
 zstyle ':completion:*' group-name ''
