@@ -3,6 +3,7 @@ call plug#begin('~/.vim/autoload/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
+Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/vim-lsp-settings'
@@ -78,6 +79,23 @@ syntax on
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+" ale
+let g:ale_sign_column_always=1
+let g:ale_fix_on_save=1
+let g:ale_linters={
+      \ 'javascript': ['eslint'],
+      \ 'json': ['jsonlint'],
+      \ 'yaml': ['prettier']
+      \}
+let g:ale_fixers={
+      \ 'javascript': ['prettier'],
+      \ 'json': ['fixjson'],
+      \ 'css': ['prettier'],
+      \ 'yaml': ['prettier']
+      \}
+nmap <silent> <C-w>k <Plug>(ale_previous_wrap)
+nmap <silent> <C-w>j <Plug>(ale_next_wrap)
 
 " fzf.vim
 nnoremap <C-g>f :Files<CR>
