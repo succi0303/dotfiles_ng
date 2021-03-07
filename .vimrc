@@ -4,6 +4,7 @@ call plug#begin('~/.vim/autoload/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
 Plug 'dense-analysis/ale'
+Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/vim-lsp-settings'
@@ -96,6 +97,26 @@ let g:ale_fixers={
       \}
 nmap <silent> <C-w>k <Plug>(ale_previous_wrap)
 nmap <silent> <C-w>j <Plug>(ale_next_wrap)
+
+" vim-easymotion
+let g:EasyMotion_startofline=0
+let g:EasyMotion_smartcase=1
+map <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+map <Leader>s <Plug>(easymotion-bd-f2)
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+map <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+map / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map n <Plug>(easymotion-next)
+map N <Plug>(easymotion-prev)
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>n <Plug>(easymotion-linebackward)
 
 " fzf.vim
 nnoremap <C-g>f :Files<CR>
