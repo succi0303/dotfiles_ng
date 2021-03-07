@@ -48,6 +48,7 @@ augroup fileTypeIndent
   autocmd!
   autocmd BufNewFile,BufRead *.rb setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd BufNewFile,BufRead *.yml,*.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd BUfNewFile,BufRead *.template,*.template.yml setlocal ft=cloudformation.yaml
 augroup END
 
 " Window settings

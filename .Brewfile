@@ -1,7 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
 
-brew 'awscli'
+brew "awscli"
+brew "cfn-lint"
 brew "curl"
 brew "fzf"
 brew "ghq"
