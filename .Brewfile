@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
+tap "aws/tap"
 
+brew "aws-sam-cli"
 brew "awscli"
 brew "cfn-lint"
 brew "curl"
