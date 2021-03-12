@@ -19,3 +19,5 @@ brew "tig"
 brew "tmux"
 brew "vim"
 brew "wget"
+
+cask "corretto8"
