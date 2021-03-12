@@ -11,8 +11,10 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'previm/previm'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
+Plug 'tyru/open-browser.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -126,3 +128,8 @@ nnoremap <C-g>l :BLines<CR>
 nnoremap <C-g>L :Lines<CR>
 nnoremap <C-g>c :BCommits<CR>
 nnoremap <C-g>C :Commits<CR>
+
+" open-browser
+let g:netw_nogx=1
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
