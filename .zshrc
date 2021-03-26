@@ -197,6 +197,7 @@ alias la='ls -a'
 alias lsa='ls -al'
 
 [ -f ~/.zshrc.`uname` ] && source ~/.zshrc.`uname`
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # base16-shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
