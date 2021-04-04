@@ -8,6 +8,9 @@
 [ghq]
     root=~/ghq
 
+[init]
+    defaultBranch = main
+    
 [push]
     default = current
 
