@@ -11,3 +11,5 @@ fi
 # User specific aliases and functions
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+complete -C /home/linuxbrew/.linuxbrew/Cellar/terraform/0.14.10/bin/terraform terraform

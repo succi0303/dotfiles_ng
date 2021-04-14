@@ -53,7 +53,7 @@ augroup fileTypeIndent
   autocmd!
   autocmd BufNewFile,BufRead *.rb setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd BufNewFile,BufRead *.yml,*.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
-  autocmd BUfNewFile,BufRead *.template,*.template.yml setlocal ft=cloudformation.yaml
+  autocmd BUfNewFile,BufRead *.template,*.template.yml,*.cfn.yaml,*.cfn.yml setlocal ft=cloudformation.yaml
 augroup END
 
 " Window settings
@@ -88,6 +88,7 @@ endif
 let g:ale_sign_column_always=1
 let g:ale_fix_on_save=1
 let g:ale_linters={
+      \ 'cfn.yaml': ['cfn-lint'],
       \ 'javascript': ['eslint'],
       \ 'json': ['jsonlint'],
       \ 'yaml': ['prettier']

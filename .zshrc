@@ -228,3 +228,6 @@ zstyle :omz:plugins:ssh-agent lifetime 72h
 # starship
 eval "$(starship init zsh)"
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/terraform/0.14.10/bin/terraform terraform
